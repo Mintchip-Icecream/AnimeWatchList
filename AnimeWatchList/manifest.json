@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "Anime Watch List",
+    "description": "Bookmark and Track the anime shows you're watching! Currently works on miruro.tv but search bar works anywhere, just type the title and enter",
+    "version": "1.0",
+    "author": "junerosarioflores@gmail.com",
+    "permissions": ["activeTab", "storage", "tabs", "scripting"],
+    "host_permissions": ["https://myanimelist.net/*", "https://miruro.tv/*"],
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+    }],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+        "16": "res/animewatchlist-logo-small.png",
+        "32": "res/animewatchlist-logo-small.png",
+        "128": "res/animewatchlist-logo.png"
+        }
+    },
+    "icons": {
+        "16": "res/animewatchlist-logo-small.png",
+        "32": "res/animewatchlist-logo-small.png",
+        "128": "res/animewatchlist-logo.png"
+    }
+}
