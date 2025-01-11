@@ -162,7 +162,7 @@ function generateBookmark(bookmark) {
   
     bookmarkInfoDiv.appendChild(episodeData);
     newBookmarkElement.appendChild(bookmarkInfoDiv);
-    bookmarksContainer.insertAdjacentElement("beforeend", newBookmarkElement);
+    bookmarksContainer.insertAdjacentElement("afterbegin", newBookmarkElement);
 }
 
 //event functions for buttons
